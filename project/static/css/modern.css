@@ -1,0 +1,188 @@
+/* Modern Bootstrap-inspired overrides for TravelGo */
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #343a40;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.nav-logo h2 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #ffc107;
+}
+.main-content {
+    max-width: 1100px;
+    margin: 2rem auto 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.service-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.search-card {
+    background: #f1f3f6;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    margin-bottom: 2rem;
+}
+.search-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+.form-group {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input[type="date"], select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+.btn.btn-primary {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn.btn-primary:hover {
+    background: #0056b3;
+}
+.results-section {
+    margin-top: 2rem;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.service-card {
+    background: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 260px;
+}
+.service-title h3 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.service-route {
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.service-details {
+    margin-bottom: 1rem;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+.detail-label {
+    color: #555;
+    font-weight: 500;
+}
+.detail-price {
+    color: #28a745;
+    font-weight: 700;
+}
+.amenities {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+.flash-messages {
+    margin-bottom: 1.5rem;
+}
+.flash-message {
+    background: #ffeeba;
+    color: #856404;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+    .main-content {
+        padding: 0.7rem;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0 0.7rem;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .search-form .form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
